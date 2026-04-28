@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/farmresort/static/css/main.4ea30eaa.css",
-    "main.js": "/farmresort/static/js/main.a4ef1b58.js",
+    "main.css": "/farmresort/static/css/main.e4378da9.css",
+    "main.js": "/farmresort/static/js/main.2954ed22.js",
     "static/media/slick.svg": "/farmresort/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/farmresort/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/farmresort/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/farmresort/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/farmresort/index.html",
-    "main.4ea30eaa.css.map": "/farmresort/static/css/main.4ea30eaa.css.map",
-    "main.a4ef1b58.js.map": "/farmresort/static/js/main.a4ef1b58.js.map"
+    "main.e4378da9.css.map": "/farmresort/static/css/main.e4378da9.css.map",
+    "main.2954ed22.js.map": "/farmresort/static/js/main.2954ed22.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ea30eaa.css",
-    "static/js/main.a4ef1b58.js"
+    "static/css/main.e4378da9.css",
+    "static/js/main.2954ed22.js"
   ]
 }
