@@ -221,9 +221,9 @@ const Contact = () => {
                         Address
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        OF 02, Second Floor, Facility Block,
+                        P.K. Farm & Resort,
                         <br />
-                        Sapana Garden, Chogm Rd, Porvorim,
+                        Amthane, Near Amthane Dam,
                         <br />
                         Goa - 403521.
                       </Typography>
@@ -232,7 +232,7 @@ const Contact = () => {
 
                   {/* Phone */}
                   <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                    <a href="tel:+919960840933">
+                    <a href="tel:+919850171156">
                       <PhoneIcon color="primary" sx={{ mr: 2, cursor: 'pointer' }} />
                     </a>
                     <Box>
@@ -240,8 +240,8 @@ const Contact = () => {
                         Phone
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        <a href="tel:+919960840933" style={{ color: 'inherit', textDecoration: 'none' }}>
-                          +91 9960840933
+                        <a href="tel:+919850171156" style={{ color: 'inherit', textDecoration: 'none' }}>
+                          +91 9850171156
                         </a>
                       </Typography>
                     </Box>
@@ -261,7 +261,7 @@ const Contact = () => {
                           href="mailto:info@rccconsultant.co.in"
                           style={{ color: 'inherit', textDecoration: 'none' }}
                         >
-                          info@rccconsultant.co.in
+                          info@pkfarmgoa.co.in
                         </a>
                       </Typography>
                     </Box>

@@ -92,7 +92,7 @@ const Navbar = () => {
           >
             <Box
               component="img"
-              src="/farm-resort/PKFarmLogo.png"
+              src="/farmresort/PKFarmLogo.png"
               alt="Company Logo"
               sx={{
                 height: 40,

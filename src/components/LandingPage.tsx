@@ -170,7 +170,7 @@ const LandingPage: React.FC = () => {
       </section>
 
     {/* Values Section */}
-      <section className="py-10 bg-gray-200">
+      <section className="py-10 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h3 className="text-3xl font-bold text-yellow-700 mb-12">Our Values</h3>
           <div className="grid md:grid-cols-4 gap-8">
@@ -203,17 +203,34 @@ const LandingPage: React.FC = () => {
             infinite
             autoplay
             autoplaySpeed={3000}
+            speed={600}
             slidesToShow={3}
             slidesToScroll={1}
+            swipeToSlide={true}
+            centerMode={false}
             responsive={[
-              { breakpoint: 768, settings: { slidesToShow: 1 } },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                },
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  centerMode: true,
+                  centerPadding: "20px",
+                  arrows: false,
+                },
+              },
             ]}
-          >
+          >            
             {testimonials.map((t, i) => (
               <div key={i} className="px-4">
-                <div className="bg-white shadow-md rounded-lg p-6">
-                  <p className="italic text-gray-700">“{t.text}”</p>
-                  <h5 className="mt-4 font-semibold text-gray-900">
+                <div className="bg-white shadow-lg rounded-xl p-6 h-full flex flex-col justify-between">
+                  <p className="italic text-gray-700 text-sm md:text-base">“{t.text}”</p>
+                  <h5 className="mt-4 font-semibold text-gray-900 text-sm md:text-base">
                     – {t.author}
                   </h5>
                 </div>

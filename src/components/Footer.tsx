@@ -23,7 +23,7 @@ const Footer = () => {
           <Box sx={{ flex: 1 }}>
                      
             <Box component="img"
-                          src="/farm-resort/PKFarmLogo.png"
+                          src="/farmresort/PKFarmLogo.png"
                           alt="Company Logo"
                           sx={{
                             height: 170,
@@ -41,19 +41,19 @@ const Footer = () => {
               Contact Us
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }} align="left">
-              OF 02,Second Floor, Facility Block,
+              P.K. Farm & Resort,
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }} align="left">
-              Sapana Garden, Chogm Rd, Porvorim,
+              Amthane, Near Amthane Dam,
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }} align="left">
               Goa - 403521
             </Typography>
             <Typography variant="body2" sx={{ mb: 1 }} align="left">
-              Phone: +91 9960840933
+              Phone: +91 9850171156
             </Typography>
             <Typography variant="body2" align="left">
-              Email: info@rccconsultant.co.in
+              Email: info@pkfarmgoa.co.in
             </Typography>
           </Box>
 
@@ -80,11 +80,11 @@ const Footer = () => {
             </MuiLink>
             <MuiLink
               component={RouterLink}
-              to="/projects"
+              to="/events"
               color="inherit"
               sx={{ display: 'block', mb: 1 }}
             >
-              Projects
+              Packages
             </MuiLink>
             <MuiLink
               component={RouterLink}
