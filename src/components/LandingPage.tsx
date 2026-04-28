@@ -7,10 +7,10 @@ import { Button } from "@mui/material";
 
 // Testimonials
 const testimonials = [
-  { text: "Best seafood in Goa! Authentic flavors and great ambiance.", author: "Ananya" },
-  { text: "Loved the Goan thali. Perfectly cooked and fresh!", author: "Rahul" },
-  { text: "A must-visit farm-resort in Goa. Amazing service.", author: "Priya" },
-  { text: "A must-visit farm-resort in Goa. Amazing service.", author: "Mohan" },
+  { text: "Best seafood in Goa! Authentic flavors and great ambiance.", author: "Ananya Pande" },
+  { text: "Loved the Goan thali. Perfectly cooked and fresh!", author: "Rahul Kulkarni" },
+  { text: "A must-visit farm-resort in Goa. Amazing service.", author: "Priya Naik" },
+  { text: "Special Mutton Masala, very delicious if visit must try.", author: "Mohan Gandhi" },
 ];
 
 // Sample Team
@@ -202,25 +202,19 @@ const LandingPage: React.FC = () => {
             dots
             infinite
             autoplay
-            autoplaySpeed={3000}
-            speed={600}
+            autoplaySpeed={3500}
+            speed={700}
             slidesToShow={3}
-            slidesToScroll={1}
-            swipeToSlide={true}
-            centerMode={false}
+            swipeToSlide
+            pauseOnHover
+            cssEase="ease-in-out"
             responsive={[
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                },
-              },
               {
                 breakpoint: 768,
                 settings: {
                   slidesToShow: 1,
                   centerMode: true,
-                  centerPadding: "20px",
+                  centerPadding: "30px",
                   arrows: false,
                 },
               },
