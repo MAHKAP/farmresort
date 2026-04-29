@@ -9,7 +9,7 @@ import { Button } from "@mui/material";
 const testimonials = [
   { text: "Best seafood in Goa! Authentic flavors and great ambiance.", author: "Ananya Pande" },
   { text: "Loved the Goan thali. Perfectly cooked and fresh!", author: "Rahul Kulkarni" },
-  { text: "A must-visit farm-resort in Goa. Amazing service.", author: "Priya Naik" },
+  { text: "A must-visit farm-resort in Goa. Amazing place and service.", author: "Priya Naik" },
   { text: "Special Mutton Masala, very delicious if visit must try.", author: "Mohan Gandhi" },
 ];
 
@@ -193,46 +193,69 @@ const LandingPage: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-10 bg-gray-200" >
-        <div className="container mx-auto px-6 text-center">
-          <h3 className="text-3xl font-bold text-yellow-700 mb-10">
-            What Our Guests Say
-          </h3>
-          <Slider
-            dots
-            infinite
-            autoplay
-            autoplaySpeed={3500}
-            speed={700}
-            slidesToShow={3}
-            swipeToSlide
-            pauseOnHover
-            cssEase="ease-in-out"
-            responsive={[
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                  centerMode: true,
-                  centerPadding: "30px",
-                  arrows: false,
-                },
-              },
-            ]}
-          >            
-            {testimonials.map((t, i) => (
-              <div key={i} className="px-4">
-                <div className="bg-white shadow-lg rounded-xl p-6 h-full flex flex-col justify-between">
-                  <p className="italic text-gray-700 text-sm md:text-base">“{t.text}”</p>
-                  <h5 className="mt-4 font-semibold text-gray-900 text-sm md:text-base">
-                    – {t.author}
-                  </h5>
-                </div>
+<section className="py-10 bg-gray-200">
+  <div className="container mx-auto px-4 text-center">
+
+    <h3 className="text-3xl font-bold text-yellow-700 mb-10">
+      What Our Guests Say
+    </h3>
+
+    <div className="w-full max-w-md md:max-w-6xl mx-auto">
+
+      <Slider
+        dots
+        infinite
+        autoplay
+        autoplaySpeed={3500}
+        speed={600}
+        slidesToShow={3}
+        slidesToScroll={1}
+        swipeToSlide
+        cssEase="ease-in-out"
+        responsive={[
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              centerMode: true,
+              centerPadding: "20px",
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+              centerPadding: "0px",
+              arrows: false,
+            },
+          },
+        ]}
+      >
+
+        {testimonials.map((t, i) => (
+          <div key={i} className="px-3">
+            <div className="w-full">
+              <div className="bg-white shadow-lg rounded-xl p-6 h-[220px] flex flex-col justify-between w-full">
+
+                <p className="italic text-gray-700 text-sm md:text-base leading-relaxed text-center">
+                  “{t.text}”
+                </p>
+
+                <h5 className="mt-4 font-semibold text-gray-900">
+                  – {t.author}
+                </h5>
+
               </div>
-            ))}
-          </Slider>
-        </div>
-      </section>
+            </div>
+          </div>
+        ))}
+
+      </Slider>
+
+    </div>
+  </div>
+</section>
 
       {/* Team Section */}
       <section className="py-10 bg-gray-100">
